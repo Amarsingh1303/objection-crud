@@ -1,0 +1,22 @@
+{
+  "name": "objection-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:makeseed":"npx knex seed:make firstseed --knexfile ./db/knexfile.js",
+    "db:migrate":"npx knex migrate:latest --knexfile ./db/knexfile.js",
+    "db:seed":"npx knex seed:run --knexfile=./db/knexfile.js",
+    "db:mgDown":"npx knex migrate:down --knexfile ./db/knexfile.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "knex": "^1.0.1",
+    "objection": "^3.0.1",
+    "pg": "^8.7.1"
+  }
+}
